@@ -68,9 +68,8 @@ const Component = () => {
   };
 
   const handleConfirm = (e) => {
-    e.preventDefault(); // ფორმის გადაგზავნის თავიდან ასაცილებლად
+    e.preventDefault();
 
-    // შეცდომების მდგომარეობების საწყისი განულება
     setCardNumError("");
     setMonthError("");
     setYearError("");
