@@ -1,26 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body.light {
+.conteiner.light {
   background: #f7f7f7;
   color: #222;
   transition: background 0.5s ease, color 0.5s ease;
 }
 
-body.dark {
+.conteiner.dark {
   background: #121212;
   color: #f5f5f5;
   transition: background 0.5s ease, color 0.5s ease;
 }
 .conteiner {
+  width: 1440px;
+  /* height: 900px; */
+  position: relative;
   display: flex;
   gap: 100px;
 }
+
+.banner123 {
+  width: 483px;
+  height: 900px;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+  background: linear-gradient(135deg, #21092f, #ff834a, #979797);
+}
+
 form {
   width: 381px;
+  position: absolute;
+  top: 275px;
+  left: 832px;
 }
 
 .box1 {
@@ -34,6 +51,7 @@ input {
   padding: 16px 11px;
   width: 100%;
   border-radius: 10px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .box2 {
@@ -83,8 +101,14 @@ button {
   color: white;
   margin-top: 30px;
   cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
 }
 
+.cardBox {
+  position: absolute;
+  top: 183px;
+  left: 167px;
+}
 .card,
 .card2 {
   width: 447px;
@@ -100,27 +124,41 @@ button {
 .card2 {
   margin-top: 80px;
   margin-left: 80px;
-  background-color: #663484;
-
-  display: flex;
-  justify-content: end;
-  align-items: end;
+  background: linear-gradient(48deg, #ffffff, #d2d3d9);
+  width: 447px;
 }
-.card2 p {
-  background-color: grey;
-  padding: 0px 60px;
-  height: 50px;
+.blackLine {
+  margin-top: 23px;
+  height: 54px;
   width: 100%;
+  background-color: #2f2f2f;
+}
+
+.card2 p {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: grey;
+  padding: 10px 16px;
+  height: 38px;
+  width: 88%;
   text-align: end;
   display: flex;
   justify-content: end;
   align-items: center;
-  font-size: 30px;
+  font-size: 18px;
   color: white;
   letter-spacing: 3px;
-  margin-bottom: 50px;
+
+  margin: 24px auto;
+  border-radius: 10px;
 }
 
+.card2 h4 {
+  width: 186px;
+  height: 26px;
+  margin: 11px auto;
+  line-height: 1;
+  color: #adb5be;
+}
 .circle {
   display: flex;
   gap: 15px;
@@ -148,7 +186,7 @@ button {
   font-family: Space Grotesk;
   font-weight: 500;
   font-style: Medium;
-  font-size: 28px;
+  font-size: 26px;
   color: white;
   line-height: 100%;
   letter-spacing: 3.42px;
@@ -167,4 +205,10 @@ button {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 25px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
